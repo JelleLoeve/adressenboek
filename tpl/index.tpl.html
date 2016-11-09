@@ -1,0 +1,49 @@
+{include file='header.tpl.html'}
+
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>Uw Adressenboek</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="callout">
+			<ul>
+
+				{foreach $adres_array as $adres}
+				<div class="row">
+					
+					<div class="large-1 columns cell">
+					{$adres.id}
+					</div>
+					
+					<div class="large-2 columns cell">
+					{$adres.naam}
+					</div>
+
+					<div class="large-2 columns cell">
+					{$adres.adres}
+					</div>	
+
+					<div class="large-3 columns cell">
+					{$adres.opmerking}
+					</div>
+					
+					<div class="large-2 columns cell">
+					<a href="delete.php" class="button small">Verwijderen</a>
+					</div>
+					
+					<div class="large-2 columns cell">
+					<a href=#" class="button small">Edit</a>
+					</div>
+				
+				</div>
+				{/foreach}
+				
+			</ul>
+        </div>
+      </div>
+    </div>
+{include file='footer.tpl.html'}
+

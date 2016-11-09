@@ -1,0 +1,29 @@
+
+
+{include file='header.tpl.html'}
+
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>Adres toevoegen</h1>
+      </div>
+    </div>
+
+    <div class="row">
+		<div class="large-12 columns">
+			<div class="callout">
+				<form method="POST" >
+					<strong> Naam:</strong><br>
+					<input type="text" name="naam" value="">
+
+					<strong> Adres:</strong><br>
+					<input type="text" name="adres" value="">
+
+					<strong><p>Opmerking:</p></strong>
+					<textarea name="opmerking" cols="50" rows="3" id="detail"></textarea>
+					<input type="submit" name="submit" value="Submit" class="button"/>
+				</form>
+			</div>
+		</div>
+    </div>
+{include file='footer.tpl.html'}
+
